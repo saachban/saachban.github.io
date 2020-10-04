@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=fallback');
+*{margin:0;padding:0;box-sizing:border-box;overflow-x:hidden;font-display:fallback}
+main{
+  animation:fade 3s 1;
+}
+body{
+    background:url(../images/index/background.png);
+    /*background-size: cover;*/
+}
+.header{
+    text-transform: uppercase;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(57deg,#0783ca,#010057/*#05409a*/);
+    animation: fade-in 3s;
+    color:white;
+    overflow-y:hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{ width:100%;height:100px;display:flex;}
+.logo{width:50%;height:100px;}
+.logo h1{width: 100%;line-height: 100px;padding-left:50px;}
+.logo h1 a{text-decoration:none;color:white}
+.logo h1 a:hover{color:yellow}
+.menu{width:50%;height:100px}
+.menu ul{width:100%;height:100px;display:flex;justify-content: space-around;align-items: center;}
+.menu ul li{list-style: none;font-size: 1rem;font-weight: bold;}
+.menu ul li a{text-decoration:none;color:white;}
+.menu ul li a:hover{color:yellow}
+.top{display: flex;flex-direction:column;justify-content:center}
+.left{width:100%;margin-top:-20px;text-align:center}
+.left img{width:80%;border-radius:50%}
+.right{ width: 100%;height:300px;margin-top:-10px;text-align: center;color:white}
+.right h1{font-size: 3.125rem;font-weight: 900;}
+.right p{font-size: 1.2rem;padding: 25px 0;text-align:center}
+.right button{
+    font-size: 1.2rem;
+    font-weight:bold;
+    color: white;
+    background-color:transparent;
+    border-radius: 4px;
+    border: 3px solid white;
+    padding:20px;
+    cursor: pointer;
+}
+/* .right button:hover{background: linear-gradient(57deg,#002366,#0783ca)} */
+
+
+.happy-bday{width:100vw;height:100%}
+.happy-bday h1{font-family: 'Montserrat', sans-serif;text-transform:uppercase;width:100%;line-height:100px;text-align:center;font-size:3rem}
+
+.happy-message{display:flex;justify-content: center;align-items: center;margin-top:-10px}
+.happy-message p{font-family:'Norican',cursive;font-size:2rem;text-align:center;width:75%}
+.stress{font-size:4rem}
+
+.photos-bday{width:100%;display:flex;flex-direction:column;justify-content:space-evenly;align-items: center;margin-top:20px}
+.photos-bday div{width:100%}
+.photos-bday img{width:100%;border-radius:5%}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-transform: uppercase;
+}
+.container p {
+  font-size: 2.75rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  color:#dd7732;
+  background-color: #dd7732;
+  margin-left: 0.1rem;
+  width: 3px;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+.photo-grid{
+  width:100%;height:100%;
+}
+.divider{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+hr.rounded {
+  border-top: 4px solid black;
+  border-radius: 5px;
+  width:90%;
+}
+
+.photo-grid-heading{font-family: 'Montserrat', sans-serif;text-transform:uppercase;width:100%;line-height:100px;text-align:center;font-size:2rem}
+.photo-grid-message{display:flex;justify-content: center;align-items: center;margin-top:-10px}
+.photo-grid-message p{font-family:'Norican',cursive;font-size:2rem;text-align:center;width:75%;margin-bottom:30px;}
+.stress{font-size:4rem}
+
+.photos-grid-container{width:100%;display:flex;flex-direction:column;justify-content:space-evenly;align-items: center;margin-top:20px;text-align:center; text-transform:uppercase; font-family:'Montserrat',sans-serif;font-size:1.5em;}
+.photos-grid-container div{width:100%}
+.photos-grid-container img{width:100%;border-radius:5%}
+
+@media(min-width: 900px){
+  .photos-bday,.photos-grid-container{flex-direction: row}
+  .photos-bday div,.photos-grid-container div{width:30%;}
+}
+
+@media (min-width:1200px){
+  .top{flex-direction:row;}
+  .left{width:45%;margin-top:10px}
+  .right{width: 55%;margin-top: 125px}
+  .header{height:100vh;clip-path: polygon(0% 0%,100% 0% ,100% 80%, 0% 100%);}
+  .talent{margin-top:0}
+  .avatar{width:400px;height:400px}
+}
+@keyframes fade{
+  from{opacity:0}
+  to{opacity:1}
+}
